@@ -1,0 +1,1 @@
+D:\++MicroSoftBand2\DataAndSource\Microsoft Band SDK and Samples for Windows\Samples\TileEvents\TileEvents.Windows\TileEvents.Windows.csproj;neutral

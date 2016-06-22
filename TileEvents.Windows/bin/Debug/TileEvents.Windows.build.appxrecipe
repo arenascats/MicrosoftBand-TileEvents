@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>LEEPHO</Machine>
+    <WindowsUser>Farell</WindowsUser>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetOsVersion>6.3</TargetOsVersion>
+    <TargetOsDescription>Windows 8.1</TargetOsDescription>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <PackageIdentityName>7cae0368-f196-46aa-8466-423b68086d0b</PackageIdentityName>
+    <IntermediateOutputPath>D:\++MicroSoftBand2\DataAndSource\Microsoft Band SDK and Samples for Windows\Samples\TileEvents\TileEvents.Windows\obj\Debug\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="D:\++MicroSoftBand2\DataAndSource\Microsoft Band SDK and Samples for Windows\Samples\TileEvents\TileEvents.Windows\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="D:\++MicroSoftBand2\DataAndSource\Microsoft Band SDK and Samples for Windows\Samples\TileEvents\TileEvents.Windows\bin\Debug\TileEvents.Windows.exe">
+      <PackagePath>TileEvents.Windows.exe</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\++MicroSoftBand2\DataAndSource\Microsoft Band SDK and Samples for Windows\Samples\TileEvents\TileEvents.Windows\packages\Microsoft.Band.1.3.20420\lib\netcore451\Google.Protobuf.dll">
+      <PackagePath>Google.Protobuf.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\++MicroSoftBand2\DataAndSource\Microsoft Band SDK and Samples for Windows\Samples\TileEvents\TileEvents.Windows\packages\Microsoft.Band.1.3.20420\lib\netcore451\Microsoft.Band.dll">
+      <PackagePath>Microsoft.Band.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\++MicroSoftBand2\DataAndSource\Microsoft Band SDK and Samples for Windows\Samples\TileEvents\TileEvents.Windows\packages\Microsoft.Band.1.3.20420\lib\netcore451\Microsoft.Band.Store.dll">
+      <PackagePath>Microsoft.Band.Store.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\++MicroSoftBand2\DataAndSource\Microsoft Band SDK and Samples for Windows\Samples\TileEvents\TileEvents.Windows\packages\Microsoft.Band.1.3.20420\lib\netcore451\Microsoft.Band.Windows.dll">
+      <PackagePath>Microsoft.Band.Windows.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\++MicroSoftBand2\DataAndSource\Microsoft Band SDK and Samples for Windows\Samples\TileEvents\TileEvents.Windows\Assets\Logo.scale-100.png">
+      <PackagePath>Assets\Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\++MicroSoftBand2\DataAndSource\Microsoft Band SDK and Samples for Windows\Samples\TileEvents\TileEvents.Windows\Assets\SmallLogo.scale-100.png">
+      <PackagePath>Assets\SmallLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\++MicroSoftBand2\DataAndSource\Microsoft Band SDK and Samples for Windows\Samples\TileEvents\TileEvents.Windows\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\++MicroSoftBand2\DataAndSource\Microsoft Band SDK and Samples for Windows\Samples\TileEvents\TileEvents.Windows\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\++MicroSoftBand2\DataAndSource\Microsoft Band SDK and Samples for Windows\Samples\TileEvents\TileEvents.Shared\Assets\SampleTileIconLarge.png">
+      <PackagePath>Assets\SampleTileIconLarge.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\++MicroSoftBand2\DataAndSource\Microsoft Band SDK and Samples for Windows\Samples\TileEvents\TileEvents.Shared\Assets\SampleTileIconSmall.png">
+      <PackagePath>Assets\SampleTileIconSmall.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\++MicroSoftBand2\DataAndSource\Microsoft Band SDK and Samples for Windows\Samples\TileEvents\TileEvents.Shared\Assets\Smile.png">
+      <PackagePath>Assets\Smile.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\++MicroSoftBand2\DataAndSource\Microsoft Band SDK and Samples for Windows\Samples\TileEvents\TileEvents.Shared\Assets\SmileUpsideDown.png">
+      <PackagePath>Assets\SmileUpsideDown.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\++MicroSoftBand2\DataAndSource\Microsoft Band SDK and Samples for Windows\Samples\TileEvents\TileEvents.Windows\bin\Debug\TileEvents.Windows.xr.xml">
+      <PackagePath>TileEvents.Windows.xr.xml</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\++MicroSoftBand2\DataAndSource\Microsoft Band SDK and Samples for Windows\Samples\TileEvents\TileEvents.Windows\bin\Debug\App.xbf">
+      <PackagePath>App.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\++MicroSoftBand2\DataAndSource\Microsoft Band SDK and Samples for Windows\Samples\TileEvents\TileEvents.Windows\bin\Debug\MainPage.xbf">
+      <PackagePath>MainPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\++MicroSoftBand2\DataAndSource\Microsoft Band SDK and Samples for Windows\Samples\TileEvents\TileEvents.Windows\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
