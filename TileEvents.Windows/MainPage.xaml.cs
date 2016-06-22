@@ -17,6 +17,7 @@
 */
 
 using System;
+using System.Windows;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -49,7 +50,12 @@ namespace TileEvents
 
         private void btStImageSmall_Click(object sender, RoutedEventArgs e)
         {
-
+            Microsoft.Win32.OpenFileDialog dialog =
+                new Microsoft.Win32.OpenFileDialog();
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                this.txtboxPath.SelectedText = dialog.FileName;
+            }
         }
 
         private void btStImage_Click(object sender, RoutedEventArgs e)
