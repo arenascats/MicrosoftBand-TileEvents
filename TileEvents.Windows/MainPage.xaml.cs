@@ -31,6 +31,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.Storage.Pickers;
+using Windows.Storage;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -48,19 +50,33 @@ namespace TileEvents
             this.DataContext = this.viewModel = App.Current;
         }
 
-        private void btStImageSmall_Click(object sender, RoutedEventArgs e)
+        private async void btStImageSmall_Click(object sender, RoutedEventArgs e)
         {
-            Microsoft.Win32.OpenFileDialog dialog =
-                new Microsoft.Win32.OpenFileDialog();
-            if (dialog.ShowDialog() == DialogResult.OK)
-            {
-                this.txtboxPath.SelectedText = dialog.FileName;
-            }
+            
+            FileOpenPicker openPicker = new FileOpenPicker();
+            openPicker.ViewMode = PickerViewMode.Thumbnail;//指示当前视图模式
+            openPicker.SuggestedStartLocation = PickerLocationId.PicturesLibrary;//跳转到win10图片库
+            openPicker.FileTypeFilter.Add(".jpg");//显示文件的类型
+            openPicker.FileTypeFilter.Add(".jpeg");
+            openPicker.FileTypeFilter.Add(".png");
+            StorageFile file = await openPicker.PickSingleFileAsync();//打开一个文件选取窗口
+            tbSmallImage.Text = file.Path;
+          
+
+
+
         }
 
-        private void btStImage_Click(object sender, RoutedEventArgs e)
+        private async void btStImage_Click(object sender, RoutedEventArgs e)
         {
-
+            FileOpenPicker openPicker = new FileOpenPicker();
+            openPicker.ViewMode = PickerViewMode.Thumbnail;//指示当前视图模式
+            openPicker.SuggestedStartLocation = PickerLocationId.PicturesLibrary;//跳转到win10图片库
+            openPicker.FileTypeFilter.Add(".jpg");//显示文件的类型
+            openPicker.FileTypeFilter.Add(".jpeg");
+            openPicker.FileTypeFilter.Add(".png");
+            StorageFile file = await openPicker.PickSingleFileAsync();//打开一个文件选取窗口
+            tbImage.Text = file.Path;
         }
     }
 }

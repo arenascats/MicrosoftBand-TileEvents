@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,-159,0">
         <TextBlock HorizontalAlignment="Left" Margin="107,70,0,0" TextWrapping="Wrap" Text="MICROSOFT BAND SDK - TILE EVENTS SAMPLE APP" VerticalAlignment="Top" FontSize="20"/>
         <RadioButton x:Name="radioButtonUseTextButton" Content="Use TextButton" GroupName="Group1" Margin="104,120,12,617" FontSize="20" IsChecked="{Binding UseTextButton, Mode=TwoWay}" HorizontalAlignment="Left" VerticalAlignment="Top"/>
         <RadioButton x:Name="radioButtonUseFilledButton" Content="Use FilledButton" GroupName="Group1" Margin="104,161,0,576" FontSize="20" IsChecked="{Binding UseFilledButton, Mode=TwoWay}" HorizontalAlignment="Left" VerticalAlignment="Top"/>
@@ -20,10 +20,10 @@
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="640,128,0,0" TextWrapping="Wrap" Text="ButtonName" VerticalAlignment="Top" Height="32" Width="125" FontSize="20"/>
         <TextBox x:Name="tbTileName" HorizontalAlignment="Left" Margin="440,123,0,0" TextWrapping="Wrap" Text="My Tile" VerticalAlignment="Top" Width="163" Background="Transparent" Foreground="#CDFCFFFF" FontFamily="Global User Interface"/>
         <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="342,128,0,0" TextWrapping="Wrap" Text="TileName" VerticalAlignment="Top" Height="32" Width="125" FontSize="20"/>
-        <TextBox x:Name="tbImage" HorizontalAlignment="Left" Height="39" Margin="475,193,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="148" FontFamily="Global User Interface" Foreground="White" Background="Transparent"/>
-        <TextBox x:Name="tbSmallImage" HorizontalAlignment="Left" Margin="815,193,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="39" Width="145" Foreground="White" Background="Transparent"/>
+        <TextBox x:Name="tbImage" HorizontalAlignment="Left" Height="39" Margin="475,193,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="300" FontFamily="Global User Interface" Foreground="White" Background="Transparent"/>
+        <TextBox x:Name="tbSmallImage" Margin="960,193,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="39" Foreground="White" Background="Transparent" HorizontalAlignment="Left" Width="300"/>
         <Button x:Name="btStImage" Content="ImgBig" HorizontalAlignment="Left" Margin="390,190,0,0" VerticalAlignment="Top" Height="45" Click="btStImage_Click"/>
-        <Button x:Name="btStImageSmall" Content="ImgSmall" HorizontalAlignment="Left" Margin="716,190,0,0" VerticalAlignment="Top" Height="45" Click="btStImageSmall_Click"/>
+        <Button x:Name="btStImageSmall" Content="ImgSmall" HorizontalAlignment="Left" Margin="861,190,0,0" VerticalAlignment="Top" Height="45" Click="btStImageSmall_Click"/>
 
     </Grid>
 </Page>
